@@ -16,7 +16,8 @@ char str2[50];
 char* reverse(char str1[]) {
     int len;
     printf("Enter a string: ");
-    gets(str1); 
+    fgets(str1, 50, stdin); // ใช้ fgets แทน gets
+    str1[strcspn(str1, "\n")] = '\0'; // ลบ newline character ที่ fgets เพิ่มเข้ามา
     len = strlen(str1);
 
     for (int i = 0; i < len; i++) {
