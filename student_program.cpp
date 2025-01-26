@@ -16,7 +16,7 @@ char str2[50];
 char* reverse(char str1[]) {
     int len;
     printf("Enter a string: ");
-    gets(str1); 
+    scanf(str1); 
     len = strlen(str1);
 
     for (int i = 0; i < len; i++) {
