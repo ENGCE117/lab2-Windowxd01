@@ -7,7 +7,7 @@ int main() {
     char text[50];
     char *output;
     output = reverse(text);
-    printf(" %s\n", output);
+    printf("MAIN : %s\n", output);
     return 0;
 }
 
@@ -15,7 +15,7 @@ char str2[50];
 
 char* reverse(char str1[]) {
     int len;
-    printf("");
+    printf("Enter a string: ");
     gets(str1); 
     len = strlen(str1);
 
@@ -24,7 +24,7 @@ char* reverse(char str1[]) {
     }
     str2[len] = '\0'; 
 
-    printf(" %s\n", str2); 
+    printf("REVERSE : %s\n", str2); 
 
     return str2; 
 }
