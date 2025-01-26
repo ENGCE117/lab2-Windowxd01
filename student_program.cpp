@@ -7,7 +7,7 @@ int main() {
     char text[50];
     char *output;
     output = reverse(text);
-    printf("MAIN : %s\n", output);
+    printf(" %s\n", output);
     return 0;
 }
 
@@ -15,16 +15,16 @@ char str2[50];
 
 char* reverse(char str1[]) {
     int len;
-    printf("Enter a string: ");
-    gets(str1); // รับค่าสตริงจากผู้ใช้
+    printf("");
+    gets(str1); 
     len = strlen(str1);
 
     for (int i = 0; i < len; i++) {
         str2[i] = str1[len - 1 - i];
     }
-    str2[len] = '\0'; // เพิ่ม null terminator
+    str2[len] = '\0'; 
 
-    printf("REVERSE : %s\n", str2); // แสดงผลลัพธ์ในฟังก์ชัน reverse
+    printf(" %s\n", str2); 
 
-    return str2; // คืนค่าพอยน์เตอร์ไปยังสตริงที่กลับลำดับแล้ว
+    return str2; 
 }
